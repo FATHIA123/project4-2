@@ -9,10 +9,10 @@ class Senate extends Component {
             return (
               
                <div className="senate" key={item.senate}>
-                        <div className="uRL"><Link to={"/IndividualSenate/"+ item.name}><img src={item.url} alt=""/></Link></div> 
-                        <div className="dis">{item.name}</div>
-                        <div className="dis">{item.party}</div>
-                        <div className="dis">{item.since}</div>
+                        <div ><Link to={"/IndividualSenate/"+ item.name}><img src={item.url} alt=""/></Link></div> 
+                        <div >{item.name}</div>
+                        <div >{item.party}</div>
+                        <div >{item.since}</div>
 
 
                         
