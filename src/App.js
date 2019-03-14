@@ -10,8 +10,9 @@ import listOfSenate from './Data/va-senators.json'
 import IndividualHouse from './Represenatives/House/IndividualHouse';
 import IndividualSenate from './Represenatives/Senate/IndividualSenate';
 import image from './Data/minimal.png'
-import Home from './HomePage/Home'
-
+// import Home  from './HomePage/Home'
+import Map from './Map/Map'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 
 class App extends Component {
@@ -43,7 +44,8 @@ class App extends Component {
           <Route path="/representatives"  render={() => <Representatives /> }/>
           <Route path="/senate"  render={() => <Senate senateData={listOfSenate}/> }/>
           <Route path="/house"  render={() => <House houseData={listOfHouse}/> }/>
-          <Route path="/"  render={() => <Home/> }/>
+          {/* <Route path="/"  render={() => <Home/> }/> */}
+          <Route path="/" render={() => <Map/> } />
 
 
           {/* <Route path="/" exact component={Home}/> */}
