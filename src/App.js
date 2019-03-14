@@ -6,6 +6,9 @@ import House from './Represenatives/House/House';
 import Senate from './Represenatives/Senate/Senate'
 import listOfHouse from './Data/va-representatives.json'
 import listOfSenate from './Data/va-senators.json'
+// import IndividualRep from './Represenatives/Senate/IndividualRep'
+import IndividualHouse from './Represenatives/House/IndividualHouse';
+import IndividualSenate from './Represenatives/Senate/IndividualSenate';
 
 
 
@@ -34,7 +37,8 @@ class App extends Component {
           
           <Switch>
           {/* <Route path="/price/:currency" render={(routerProps) => <Price setPrice={this.setPrice}  {...routerProps} {...this.state}/>} /> */}
-          {/* <Route path="/IndividualRep/:name" render={routerProps => <IndividualRep {...listOfHouse} {...listOfSenate} {...routerProps} {...this.state}/>}/> */}
+          <Route path="/IndividualHouse/:name" render={routerProps => <IndividualHouse {...listOfHouse} {...routerProps} {...this.state}/>}/>
+          <Route path="/IndividualSenate/:name" render={routerProps => <IndividualSenate {...listOfSenate} {...routerProps} {...this.state}/>}/>         
           <Route path="/representatives"  render={() => <Representatives /> }/>
           <Route path="/senate"  render={() => <Senate senateData={listOfSenate}/> }/>
           <Route path="/house"  render={() => <House houseData={listOfHouse}/> }/>
