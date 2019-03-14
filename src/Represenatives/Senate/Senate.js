@@ -8,14 +8,20 @@ class Senate extends Component {
         let list = this.props.senateData.map(item => {
             return (
               
-              <div className="currency" key={item.currency}>
-                <p><Link to={"/IndividualSenate/"+ item.name}><img src={item.url} alt=""/></Link>: {item.name}</p>
+               <div className="senate" key={item.senate}>
+                        <div className="uRL"><Link to={"/IndividualSenate/"+ item.name}><img src={item.url} alt=""/></Link></div> 
+                        <div className="dis">{item.name}</div>
+                        <div className="dis">{item.party}</div>
+                        <div className="dis">{item.since}</div>
+
+
+                        
               </div>
              
             )
           })
           return (
-            <div>
+            <div className="one">
               {list}
             </div>
           )

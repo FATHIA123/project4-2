@@ -1,0 +1,10 @@
+.one {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 70px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* size: 500px; */
+
+}

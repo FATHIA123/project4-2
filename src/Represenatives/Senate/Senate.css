@@ -1,0 +1,25 @@
+
+
+
+.senate{
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 100px;
+    justify-content: space-around;
+    /* size: 500px; */
+
+}
+/* .uRL{
+
+    size: 500px;
+} */
+/* .dis {
+    float: right;
+} */

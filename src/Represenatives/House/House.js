@@ -8,14 +8,17 @@ class House extends Component {
         let list = this.props.houseData.map(item => {
             return (
               
-              <div className="currency" key={item.currency}>
-                <p><Link to={"/IndividualHouse/"+ item.name}><img src={item.url} alt=""/></Link>: {item.name}</p>
+            <div className="house" key={item.currency}>
+                        <div><Link to={"/IndividualHouse/"+ item.name}><img src={item.url} alt=""/></Link></div>
+                        <div>{item.name}</div>
+                        <div>{item.party}</div>
+                        <div>{item.since}</div>
               </div>
              
             )
           })
           return (
-            <div>
+            <div className="one">
               {list}
             </div>
           )
