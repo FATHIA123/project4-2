@@ -17,7 +17,7 @@ nav {
 }
 
 nav img {
-  max-height: 50px;
+  max-height: 80px;
   /* padding: 5px; */
   margin: 5px 20px 5px 0;
   display: inline-block;
@@ -47,3 +47,7 @@ main {
   margin: auto;
   height: 100%;
 }
+
+/* .img {
+  size: 100px;
+} */

@@ -9,6 +9,7 @@ import listOfSenate from './Data/va-senators.json'
 // import IndividualRep from './Represenatives/Senate/IndividualRep'
 import IndividualHouse from './Represenatives/House/IndividualHouse';
 import IndividualSenate from './Represenatives/Senate/IndividualSenate';
+import image from './Data/minimal.png'
 
 
 
@@ -27,7 +28,7 @@ class App extends Component {
       <div>
         <nav>
           <Link to="/" >
-          <img src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt=""/>
+          <img src={image} alt="" className="img"/>
           </Link>
           <Link to="/representatives">
           <h1>Virginia Representatives</h1>
