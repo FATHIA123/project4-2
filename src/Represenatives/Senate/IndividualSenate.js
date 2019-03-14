@@ -16,11 +16,7 @@ class IndividualSenate extends Component {
                 <img src={senateRep[0].url} alt=""/>
                 {/* <div>{senateRep[0].url}</div> */}
                <div>{senateRep[0].name}</div>
-               {/* <div>{senateRep[0].change}</div>
-               <div>{senateRep[0].lastPrice}</div>
-               <div>{stosenateRepck[0].high}</div>
-               <div>{senateRep[0].low}</div>
-               <div>{senateRep[0].open}</div>           */}
+              
           </div>
         );
     }

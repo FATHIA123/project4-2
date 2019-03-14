@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+
+
+.btn {
+    height: 500px;
+    width: 400px;
+    font-size: 80px;
+    border-radius: 50px;
+    background-color: #bfbfbf;
+    font-family: 'Lilita One', cursive;
+
+}
+
+.container {
+     margin-top: 80px; 
+     display: flex; 
+     flex-direction: row;
+     justify-content: space-around;
+
+}
