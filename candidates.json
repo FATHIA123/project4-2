@@ -1,0 +1,57 @@
+[
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/H001075.jpg",
+      "name": "Kamala Harris",  
+      "party": "Democrat",  
+      "since": "Since Dec 13, 2007"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/S000033.jpg",
+      "name": "Bernie Sanders",  
+      "party": "Democrat",  
+      "since": "Since Jan 3, 2019"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/W000817.jpg",
+      "name": "Elizabeth Warren",  
+      "party": "Democrat",  
+      "since": "Since Jan 5, 1993"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/B001288.jpg",
+      "name": "Cory Booker",   
+      "party": "Democrat", 
+      "since": "Since Jan 3, 2017"
+    
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/G000571.jpg",
+      "name": "Tulsi Gabbard",   
+      "party": "Democrat",  
+      "since": "Since Jan 3, 2013"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/G000555.jpg",
+      "name": "Kirsten Gillibrand",  
+      "party": "Democrat", 
+      "since": "Since Jan 23, 2009"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/K000367.jpg",
+      "name": "Amy Klobuchar",  
+      "party": "Democrat", 
+      "since": " Since Jan 5, 2011"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/D000620.jpg",
+      "name": "John Delaney", 
+      "party": "Democrat",  
+      "since": " Since Jan 6, 2009"
+    },
+    {
+      "url": "https://theunitedstates.io/images/congress/225x275/I000026.jpg",
+      "name": "Jay Inslee", 
+      "party": "Democrat",  
+      "since": " Since Jan 3, 2019"
+    }
+  ]
