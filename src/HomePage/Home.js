@@ -5,7 +5,7 @@ import './Home.css'
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="homepage">
             <div className='sectionOne'>
                 <h1 className='intro'>Get to Know Who Represents You</h1>
                 <div>
