@@ -5,6 +5,20 @@
     margin: 70px;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* size: 500px; */
+    border: solid red 1px;
 
+    size: 500px;
+
+} 
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    /* border: solid red 1px; */
 }
+
+/* .map {
+    transform: scale(2.25);
+} */

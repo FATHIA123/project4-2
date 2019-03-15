@@ -9,7 +9,7 @@ class House extends Component {
             return (
               
             <div className="house" key={item.currency}>
-                        <div><Link to={"/IndividualHouse/"+ item.name}><img src={item.url} alt=""/></Link></div>
+                        <div><Link to={"/IndividualHouse/"+ item.name}><img src={item.url} alt="" width="225" height="275"/></Link></div>
                         <div>{item.name}</div>
                         <div>{item.party}</div>
                         <div>{item.since}</div>
