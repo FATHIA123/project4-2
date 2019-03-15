@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 // import Data from './../../Data/va-senators.json'
 // import axios from 'axios';
+import listOfSenate from '../../Data/va-senators.json'
 
+// 
 
 // const memberURL = `https://api.propublica.org/congress/v1/members/${member_id}/votes.json`
-
-
-class issues extends Component {
-
-    constructor(props){
+console.log(listOfSenate)
+// let member_id =  this.props.senateData.map(item => {
+    //     return (
+        
+        //     )
+        //   })
+        class issues extends Component {
+            
+            constructor(props){
             super(props);
             this.state={
-            member_id: null
+            listOfSenate: listOfSenate,
+            member_id: {}
                 }
                 this.setSenate = this.setSenate.bind(this)
             

@@ -40,7 +40,7 @@ class App extends Component {
         <main>
           
           <Switch>
-          <Route path="/issues/:id" render={routerProps => <Issues setSenate={this.setSenate} {...listOfSenate} {...routerProps} {...this.state}/>}/>         
+          <Route path="/issues/:id" render={routerProps => <Issues {...this.state} {...routerProps} />}/>         
 
           {/* <Route path="/price/:currency" render={(routerProps) => <Price setPrice={this.setPrice}  {...routerProps} {...this.state}/>} /> */}
           <Route path="/IndividualSenate/:name" render={routerProps => <IndividualSenate {...listOfSenate} {...routerProps} {...this.state}/>}/>         
