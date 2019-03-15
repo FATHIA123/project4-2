@@ -16,25 +16,31 @@ const navStyle = {
   class Map extends Component {
    
         state = {
+          mapStyle: "mapbox://styles/kirarae21/cjt799cn115r61fqmf9rmezof",
           viewport: {
             latitude: 37.7680,
             longitude: -78.2057,
             zoom: 5.8,
             minZoom: 4.5,
-            bearing: 0,
-            pitch: 0,
             width: 900,
-            height: 500,
+            height: 500
           }
         };
       
+        _onViewportChange = viewport => this.setState({viewport});
+
+        _onStyleChange = mapStyle => this.setState({mapStyle});
+      
   render() {
+
+    const {viewport, mapStyle} = this.state;
+
     return (
       <div className="map" >
           <ReactMapGL
-            {...this.state.viewport}
-            onViewportChange={(viewport) => this.setState({viewport})}
-            mapStyle="mapbox://styles/kirarae21/cjt799cn115r61fqmf9rmezof" 
+            {...viewport}
+            mapStyle={mapStyle}
+            onViewportChange={this._onViewportChange} 
             mapboxApiAccessToken={TOKEN}>
             <div className="nav" style={navStyle}> 
               <NavigationControl/>
