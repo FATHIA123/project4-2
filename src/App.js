@@ -6,11 +6,11 @@ import House from './Represenatives/House/House';
 import Senate from './Represenatives/Senate/Senate'
 import listOfHouse from './Data/va-representatives.json'
 import listOfSenate from './Data/va-senators.json'
-// import IndividualRep from './Represenatives/Senate/IndividualRep'
 import IndividualHouse from './Represenatives/House/IndividualHouse';
 import IndividualSenate from './Represenatives/Senate/IndividualSenate';
 import image from './Data/minimal.png'
 import Home from './HomePage/Home'
+import Issues from './Represenatives/Senate/Issues';
 
 
 
@@ -19,9 +19,12 @@ class App extends Component {
     super(props)
     this.state ={
       listOfHouse: listOfHouse,
-      listOfSenate: listOfSenate
+      listOfSenate: listOfSenate,
     }
+
   }
+
+  
 
   render() {
     return (
@@ -37,9 +40,11 @@ class App extends Component {
         <main>
           
           <Switch>
+          <Route path="/issues/:id" render={routerProps => <Issues setSenate={this.setSenate} {...listOfSenate} {...routerProps} {...this.state}/>}/>         
+
           {/* <Route path="/price/:currency" render={(routerProps) => <Price setPrice={this.setPrice}  {...routerProps} {...this.state}/>} /> */}
-          <Route path="/IndividualHouse/:name" render={routerProps => <IndividualHouse {...listOfHouse} {...routerProps} {...this.state}/>}/>
           <Route path="/IndividualSenate/:name" render={routerProps => <IndividualSenate {...listOfSenate} {...routerProps} {...this.state}/>}/>         
+          <Route path="/IndividualHouse/:name" render={routerProps => <IndividualHouse {...listOfHouse} {...routerProps} {...this.state}/>}/>
           <Route path="/representatives"  render={() => <Representatives /> }/>
           <Route path="/senate"  render={() => <Senate senateData={listOfSenate}/> }/>
           <Route path="/house"  render={() => <House houseData={listOfHouse}/> }/>

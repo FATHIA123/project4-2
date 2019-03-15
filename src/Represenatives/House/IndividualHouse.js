@@ -6,7 +6,7 @@ class IndividualHouse extends Component {
             onerep.name === this.props.match.params.name)[0]
             
 
-        console.log(houseRep)
+        // console.log(houseRep)
 // array of objects
 
         return (

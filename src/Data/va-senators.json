@@ -4,14 +4,14 @@
         "name": "Tim Kaine", 
         "party": "Democrat", 
         "since": "Since Jan 3, 2013" ,
-        "issue_id": "K000384"
+        "member_id": "K000384"
     },
     {
         "url": "https://theunitedstates.io/images/congress/225x275/W000805.jpg",
         "name": "Mark Warner", 
         "party": "Democrat",  
         "since": " Since Jan 6, 2009",
-        "issue_id": "W000805"
+        "member_id": "W000805"
     }
 
 ]
