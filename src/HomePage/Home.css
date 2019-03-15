@@ -1,0 +1,22 @@
+.sectionOne {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    /* border: red solid 1px; */
+  }
+
+/* .sectionTwo {
+    background: #f2f2f2;
+    
+} */
+  .intro {
+      font-size: 70px;
+      text-align: center;
+  }
+
+.map {
+    
+}

@@ -10,13 +10,27 @@
     size: 500px;
 
 } 
-
+.rep-subtitle {
+    text-align: center;
+}
+.twitter {
+    /* border: solid red 1px; */
+    padding-top: 40px;
+}
 .profile {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
+    width: 80vw;
     /* border: solid red 1px; */
+}
+.app {
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
 }
 
 /* .map {

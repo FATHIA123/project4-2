@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 class IndividualSenate extends Component {
     render() {
@@ -10,14 +11,28 @@ class IndividualSenate extends Component {
 // array of objects
 
         return (
+            <div className='app'>
+
+
+<h1 className="rep-subtitle">More Information on {this.props.match.params.name}</h1>
+    <div className="profile">
             <div>
-
-
-<h1>More Information on {this.props.match.params.name}</h1>
-
-                <img src={senateRep.url} alt=""/>
-                {/* <div>{senateRep[0].url}</div> */}
-               <div>{senateRep.name}</div>
+                <img src={senateRep.url} alt="representatives" width="225" 
+                height="275"/>
+                
+                <div>
+                    <span>{senateRep.initial}</span> |
+                    <span> {senateRep.name}</span>
+                    <div className='twitter'>
+                    <TwitterTimelineEmbed
+                    sourceType= 'profile'
+                    screenName= {senateRep.twitterName}
+                    options={{height: 300}}/>
+                    </div>
+                </div>
+            </div>
+         
+          </div>
               
           </div>
         );

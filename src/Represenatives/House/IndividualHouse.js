@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Iframe from 'react-iframe'
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 class IndividualHouse extends Component {
     render() {
@@ -11,18 +12,26 @@ class IndividualHouse extends Component {
 // array of objects
 
         return (
-            <div>
+            <div className='app'>
 
 
-<h1>More Information on {this.props.match.params.name}</h1>
+<h1 className="rep-subtitle">More Information on {this.props.match.params.name}</h1>
             <div className="profile">
                 <div>
                     <img src={houseRep.url} alt="representatives" width="225" height="275"/>
-                    <div>
+                    <div> 
                         <span>{houseRep.initial}</span> |
                         <span> {houseRep.name}</span>
+                        <div>District: {houseRep.district}</div>
+                        <div className='twitter'>
+                        <TwitterTimelineEmbed 
+                        
+                        sourceType= 'profile'
+                        screenName= {houseRep.twitterName}
+                        options={{height: 300}}
+                        />
+                        </div>
                     </div>
-                <div>District: {houseRep.district}</div>
             </div>
                 <Iframe className="map" url={houseRep.mapUrl}   
                     position="relative"
@@ -33,8 +42,7 @@ class IndividualHouse extends Component {
                     marginheight="0" 
                     marginwidth="0"
                     // min-zoom="15"
-                    />
-                    
+                    />         
             </div>
             
                 {/* <div>{houseRep[0].url}</div> */}

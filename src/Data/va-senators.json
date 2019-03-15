@@ -3,13 +3,17 @@
         "url": "https://theunitedstates.io/images/congress/225x275/K000384.jpg",
         "name": "Tim Kaine", 
         "party": "Democrat", 
-        "since": "Since Jan 3, 2013" 
+        "initial": "D",
+        "since": "Since Jan 3, 2013", 
+        "twitterName": "timkaine"
     },
     {
         "url": "https://theunitedstates.io/images/congress/225x275/W000805.jpg",
         "name": "Mark Warner", 
-        "party": "Democrat",  
-        "since": " Since Jan 6, 2009"
+        "party": "Democrat", 
+        "initial": "D", 
+        "since": " Since Jan 6, 2009",
+        "twitterName": "MarkWarnerVA"
     }
 
 ]
