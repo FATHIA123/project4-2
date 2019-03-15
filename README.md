@@ -34,7 +34,10 @@ To set up the app locally:
 ```
 npm install
 ```
-3. Run npm start
+3. Run npm start and then navigate to local host in browser
+```
+npm start
+```
 ## Authors
 [Fathia Mohammed](https://github.com/FATHIA123)
 
