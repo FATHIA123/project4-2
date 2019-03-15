@@ -15,8 +15,15 @@
   .intro {
       font-size: 70px;
       text-align: center;
+    /* border: blue solid 1px; */
+     margin-top: 0;
   }
 
-.map {
+  .homepage {
+    /* border: solid purple 1px; */
+    /* margin-top: 0; */
+  }
+
+/* .map {
     
-}
+} */

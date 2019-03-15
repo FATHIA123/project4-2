@@ -14,7 +14,6 @@ const navStyle = {
   };
 
   class Map extends Component {
-   
         state = {
           mapStyle: "mapbox://styles/kirarae21/cjt799cn115r61fqmf9rmezof",
           viewport: {
@@ -22,8 +21,8 @@ const navStyle = {
             longitude: -78.2057,
             zoom: 5.8,
             minZoom: 4.5,
-            width: 900,
-            height: 500
+            width: 1200,
+            height: 700
           }
         };
       
@@ -43,7 +42,8 @@ const navStyle = {
             onViewportChange={this._onViewportChange} 
             mapboxApiAccessToken={TOKEN}>
             <div className="nav" style={navStyle}> 
-              <NavigationControl/>
+              <NavigationControl
+               onViewportChange={this._onViewportChange} />
             </div>
         </ReactMapGL>
         
