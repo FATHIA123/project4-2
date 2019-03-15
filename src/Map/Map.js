@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactMapGL, {NavigationControl, Marker} from 'react-map-gl';
+import ReactMapGL, {NavigationControl} from 'react-map-gl';
 // import ReactMapGL, {Marker} from 'react-map-gl';
 import './Map.css'
 
